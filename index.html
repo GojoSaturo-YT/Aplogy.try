@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Confirmation</title>
+    <script>
+        function handleConfirmation() {
+            var userResponse = prompt("Have you accepted my apology? Type 'Yes' if you have.");
+            if (userResponse && userResponse.trim().toLowerCase() === 'yes') {
+                // Open WhatsApp group link
+                window.location.href = "https://chat.whatsapp.com/FzRPWHt2TdUCRw5ZDDB4Xk";
+            } else {
+                alert("Thank you for your response.");
+            }
+        }
+    </script>
+</head>
+<body onload="handleConfirmation()">
+    <h1>Apology Confirmation</h1>
+    <p>Please confirm if you have accepted my apology.</p>
+</body>
+</html>
